@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>eco double</title>
+    
+<link rel="stylesheet" href="stylesheet.css">
+
+    <div id="first">
+    <a href="index.html"><img id="logo" src="ecoLogo.png"></a> 
+    
+    <div id="meny">
+        <strong><a href ="product.html">product</a></strong>
+        <strong><a href ="quiz.html">quiz</a></strong>
+        <strong><a href ="about.html">about</a></strong>
+        <strong><a href ="cart.html">cart(0)</a></strong>
+    </div>
+        
+        <div id="cbLag">
+        <h4>What is your hair type?</h4>
+            <input type="checkbox" value="-1"> Straight<br>
+            <input type="checkbox" value="2"> Wavy<br>
+            <input type="checkbox" value="1"> Curly<br>
+            <input type="checkbox" value="-1"> Coily<br><br>
+        
+            <h4>What would you define your hair structure to be?</h4>
+            <input type="checkbox" value="-1"> Fine<br>
+            <input type="checkbox" value="1"> Medium<br>
+            <input type="checkbox" value="2"> Coarse<br><br>
+                                                                  
+            <h4>How much moisture does your scalp need?</h4>
+            <input type="checkbox" value="1"> Little (oily scalp)<br>
+            <input type="checkbox" value="-1"> Medium (normal scalp)<br>
+            <input type="checkbox" value="-1"> A lot (dry scalp)<br><br><br>
+    
+            <button id="btnSvar">Get anwers!</button>
+            <button id="btnRestart">Do it again</button>
+        
+      </div>
+        
+        <div id="resultat"></div> 
+
+    </div>
+    
+
+</head>
+<body>
+      
+        
+        <script>
+            
+            var cbLag = document.getElementById("cbLag");
+            var btnSvar = document.getElementById("btnSvar");
+            var btnRestart = document.getElementById("btnRestart");
+            var resultat = document.getElementById("resultat");
+            var poeng = 0;
+            var img = ["apple.png", "lemon.png", "orange.png" ,"strawberry.png","peach.png", "lavender.png", "raspberry.png", "blueberry.png"];
+            var type = ["Pear & apple", "Mango & lemon", "Orange", "Strawberry & kiwi", "Peach & mandarin", "Lavender & eucalyptus", "Raspberry", "Blueberry" ]
+            
+            btnSvar.onclick = function(){
+                
+                var svarene = cbLag.querySelectorAll("input:checked");
+                svarene = Array.from(svarene);
+                for (var i=0; i<svarene.length; i++){
+                    poeng = poeng + Number(svarene[i].value);
+                    if(svarene[i].value == "1"){
+                        svarene[i].style.boxShadow = "2px 2px #738963";
+                    }
+                    if(svarene[i].value == "-1"){
+                        svarene[i].style.boxShadow = "2px 2px #738963";
+                    } 
+                    if(svarene[i].value == "2"){
+                        svarene[i].style.boxShadow = "2px 2px #738963";
+                    }
+                }
+                
+                resultat.innerHTML = "For your hair type we recommend: <br><br> <img src='img/" + img[poeng] + "' height='300'> <br><br> <strong>" +  type[poeng] + "</strong";
+            }
+            console.log(img[poeng]);
+            
+            btnRestart.onclick = function(){
+                
+                var bokser = cbLag.querySelectorAll("input[type='checkbox']");
+                for(var i = 0; i<bokser.length; i++){
+                    bokser[i].checked = false;
+                   bokser[i].style.boxShadow = "2px 2px #738963";
+                }
+                poeng = 0;
+                 resultat.innerHTML = "";  
+                
+                console.log(poeng);
+            }
+    </script>
+    
+</body>
+</html>
