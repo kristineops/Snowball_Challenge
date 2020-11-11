@@ -20,19 +20,19 @@
         
         <div id="cbLag">
         <h4>What is your hair type?</h4>
-            <input type="checkbox" value="-1"> Straight<br>
-            <input type="checkbox" value="2"> Wavy<br>
-            <input type="checkbox" value="1"> Curly<br>
-            <input type="checkbox" value="-1"> Coily<br><br>
+            <input type="checkbox" value="1"> Straight<br>
+            <input type="checkbox" value="1"> Wavy<br>
+            <input type="checkbox" value="2"> Curly<br>
+            <input type="checkbox" value="1"> Coily<br><br>
         
             <h4>What would you define your hair structure to be?</h4>
-            <input type="checkbox" value="-1"> Fine<br>
+            <input type="checkbox" value="1"> Fine<br>
             <input type="checkbox" value="1"> Medium<br>
-            <input type="checkbox" value="2"> Coarse<br><br>
+            <input type="checkbox" value="-1"> Coarse<br><br>
                                                                   
             <h4>How much moisture does your scalp need?</h4>
             <input type="checkbox" value="1"> Little (oily scalp)<br>
-            <input type="checkbox" value="-1"> Medium (normal scalp)<br>
+            <input type="checkbox" value="2"> Medium (normal scalp)<br>
             <input type="checkbox" value="-1"> A lot (dry scalp)<br><br><br>
     
             <button id="btnSvar">Get anwers!</button>
@@ -76,21 +76,26 @@
                 }
                 
                 resultat.innerHTML = "For your hair type we recommend: <br><br> <img src='img/" + img[poeng] + "' height='300'> <br><br> <strong>" +  type[poeng] + "</strong";
+                resultat.innerHTML += "<br>" + poeng
             }
             console.log(img[poeng]);
+            
             
             btnRestart.onclick = function(){
                 
                 var bokser = cbLag.querySelectorAll("input[type='checkbox']");
                 for(var i = 0; i<bokser.length; i++){
                     bokser[i].checked = false;
-                   bokser[i].style.boxShadow = "2px 2px #738963";
+                   bokser[i].style.boxShadow = "";
                 }
                 poeng = 0;
                  resultat.innerHTML = "";  
                 
                 console.log(poeng);
             }
+
+           
+            
     </script>
     
 </body>
