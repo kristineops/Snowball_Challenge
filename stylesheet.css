@@ -1,7 +1,12 @@
         #first{
            background-image: url(forrest2.jpg);
+<<<<<<< HEAD
            width: 100%;
            height: auto;
+=======
+           width: 101%;
+           height: 100%;
+>>>>>>> bb0d453b75a10304ede4aff17016dc6cdf10f341
            position: absolute;
            margin-left: -1%;
            margin-top: -1%
@@ -280,7 +285,11 @@
         a:link {
             color: black;
             text-decoration: none;
+<<<<<<< HEAD
             
+=======
+            font-size: ;
+>>>>>>> bb0d453b75a10304ede4aff17016dc6cdf10f341
         }
         a:visited {
             text-decoration: none;
