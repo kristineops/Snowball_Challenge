@@ -1,23 +1,21 @@
+        body{
+            background-color: dimgray;
+        }
         #first{
            background-image: url(forrest2.jpg);
-<<<<<<< HEAD
-           width: 100%;
-           height: auto;
-=======
-           width: 101%;
+           width: 99%;
            height: 100%;
->>>>>>> bb0d453b75a10304ede4aff17016dc6cdf10f341
            position: absolute;
-           margin-left: -1%;
-           margin-top: -1%
+           display: block;
+          
        }  
         #second{
            background-image: url(forrest2.jpg);
-           width: 101%;
-           height: 250%;
+           width: 100%;
+           height: 60%;
            position: absolute;
-           margin-left: -1%;
-           margin-top: -1%
+           display: block;
+          
        } 
 
         #logo{
@@ -33,12 +31,12 @@
             position: relative;
             text-align: center;
             font-family: 'ITC Avant Garde Gothic W01 Bd', sans-serif, sans-serif; 
-            margin: auto;
             width: 100%;
             padding: 10px;
-            word-spacing: 300px;
-            margin-top: -90px;
-            margin-left: -2%;
+            word-spacing: 20px;
+            margin-top: auto;
+            margin-left: auto;
+            display: block;
             font-variant: small-caps;
             font-size: 20px;
         }
@@ -46,9 +44,12 @@
            position: relative;
            height: 40px;
            font-family: inherit; 
-           width: 500px;
-           margin-left: 9%;
-           margin-top:15%;
+           width: auto;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 10%;
+           margin-bottom: 5%;
+           display: block;
            color: white;
            text-align: center;
            font-size: 50px;
@@ -57,9 +58,12 @@
            position: relative;
            font-family: inherit; 
            width: 300px;
-           margin-left: 16%;
-           margin-top: 8%;
+           display: block;
+           margin-top: 5%;
+           margin-right: auto;
+           margin-left: auto;
            text-align: center;
+           margin-top: 10px;
            font-size: 16px;
            background-color: #738963;
            font-variant: small-caps;
@@ -69,8 +73,9 @@
            position: relative;
            font-family: inherit; 
            width: 170px;
-           margin-left: 20%;
-           top: -12px;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
            text-align: center;
            font-size: 16px;
            background-color: #738963;
@@ -92,139 +97,125 @@
            border: none;
            
        }
-       #imgBottles{
-            position: absolute;
-           margin-left:60%;
-           height: 50%;
-           margin-top: -25%;
-       } 
-    #product1{
+   #product1{
             position: absolute;
             text-align: center;
-            top: 13%;
+            top: 40%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 18%;
             margin-right: auto;
             width: 350px;
-            color: whitesmoke;
     } 
     #product2{
             position: absolute;
             text-align: center;
-            top: 13%;
+            top: 40%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 38%;
             margin-right: auto;
              width: 350px;
-            color: whitesmoke;
     }
     #product3{
             position: absolute;
             text-align: center;
-            top: 13%;
+            top: 40%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 58%;
             margin-right: auto;
             width: 350px;
-            color: whitesmoke;
     }
     
     
     #product4{
             position: absolute;
             text-align: center;
-            top: 35%;
+            top: 120%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 18%;
             margin-right: auto;
             width: 350px;
-            color: gray;
-    }   
- #product5{
+    } 
+    #product5{
             position: absolute;
             text-align: center;
-            top: 35%;
+            top: 120%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 38%;
             margin-right: auto;
             width: 350px;
-            color: gray;
     }
     #product6{
             position: absolute;
             text-align: center;
-            top: 35%;
+            top: 120%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 58%;
             margin-right: auto;
             width: 350px;
-            color: whitesmoke;
     }
     
     
     #product7{
             position: absolute;
             text-align: center;
-            top: 58%;
+            top: 200%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 18%;
             margin-right: auto;
             width: 350px;
-            color: whitesmoke;
     } 
     #product8{
             position: absolute;
             text-align: center;
-            top: 58%;
+            top: 200%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 38%;
             margin-right: auto; 
             width: 350px;
-            color: whitesmoke;
     }
- #product9{
+    #product9{
             position: absolute;
             text-align: center;
-            top: 58%;
+            top: 200%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 58%;
             margin-right: auto; 
             width: 350px;
-            color: whitesmoke;
-}
+    }
+    
+
     #product10{
             position: absolute;
             text-align: center;
-            top: 80%;
+            top: 270%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
             margin-left: 18%;
             margin-right: auto;
             width: 350px;
-            color: whitesmoke;
     } 
   #cbLag{
             position: absolute;
-            top: 20%;
+            top: 26%;
             left: 20%;;
             align-content: center;
         }      
@@ -247,7 +238,7 @@
             position: absolute;
             margin-left: 60%;
             height: 50%;
-            margin-top: 8%;
+            margin-top: 2%;
             font-size: 20px;
             align-content: center;
             text-align: center;
@@ -285,11 +276,6 @@
         a:link {
             color: black;
             text-decoration: none;
-<<<<<<< HEAD
-            
-=======
-            font-size: ;
->>>>>>> bb0d453b75a10304ede4aff17016dc6cdf10f341
         }
         a:visited {
             text-decoration: none;
