@@ -1,5 +1,6 @@
         body{
             background-color: dimgray;
+            
         }
         #first{
            background-image: url(forrest2.jpg);
@@ -7,14 +8,18 @@
            height: 100%;
            position: absolute;
            display: block;
+           margin-left: auto;
+           margin-right: auto;
           
        }  
         #second{
            background-image: url(forrest2.jpg);
-           width: 100%;
+           width: 99%;
            height: 60%;
            position: absolute;
            display: block;
+           margin-left: auto;
+           margin-right: auto;
           
        } 
 
@@ -31,7 +36,6 @@
             position: relative;
             text-align: center;
             font-family: 'ITC Avant Garde Gothic W01 Bd', sans-serif, sans-serif; 
-            width: 100%;
             padding: 10px;
             word-spacing: 20px;
             margin-top: auto;
@@ -40,6 +44,7 @@
             font-variant: small-caps;
             font-size: 20px;
         }
+      
        #txt1{
            position: relative;
            height: 40px;
@@ -100,7 +105,7 @@
    #product1{
             position: absolute;
             text-align: center;
-            top: 40%;
+            top: 70%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -111,7 +116,7 @@
     #product2{
             position: absolute;
             text-align: center;
-            top: 40%;
+            top: 70%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -122,7 +127,7 @@
     #product3{
             position: absolute;
             text-align: center;
-            top: 40%;
+            top: 70%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -135,7 +140,7 @@
     #product4{
             position: absolute;
             text-align: center;
-            top: 120%;
+            top: 150%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -146,7 +151,7 @@
     #product5{
             position: absolute;
             text-align: center;
-            top: 120%;
+            top: 150%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -157,7 +162,7 @@
     #product6{
             position: absolute;
             text-align: center;
-            top: 120%;
+            top: 150%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -170,7 +175,7 @@
     #product7{
             position: absolute;
             text-align: center;
-            top: 200%;
+            top: 230%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -181,7 +186,7 @@
     #product8{
             position: absolute;
             text-align: center;
-            top: 200%;
+            top: 230%;
             font-family: "Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -192,7 +197,7 @@
     #product9{
             position: absolute;
             text-align: center;
-            top: 200%;
+            top: 230%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -200,12 +205,11 @@
             margin-right: auto; 
             width: 350px;
     }
-    
 
     #product10{
             position: absolute;
             text-align: center;
-            top: 270%;
+            top: 300%;
             font-family:"Times New Roman", Times, serif;
             font-variant: small-caps;
             display: block;
@@ -259,7 +263,7 @@
             margin-left: auto;
             margin-right: auto;
             line-height: 40px;
-     background-color: #738963;
+            background-color: #738963;
 
         }
         h1{
